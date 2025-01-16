@@ -177,7 +177,7 @@ def generate_hw03(question2, question3):
     q3response = q3response.replace("\n```", "")
     q3response = q3response.replace("```json\n", "")
     dict = json.loads(q3response)
-    dict = {"result": dict}
+    dict = {"Result": dict}
     q3response = json.dumps(dict, indent = 4, ensure_ascii=False)
     return q3response
     
@@ -210,7 +210,7 @@ def generate_hw04(question):
     response = response.replace("\n```", "")
     response = response.replace("```json\n", "")
     dict = json.loads(response)
-    dict = {"result": dict}
+    dict = {"Result": dict}
     response = json.dumps(dict, indent = 4, ensure_ascii=False)
     return response
 
