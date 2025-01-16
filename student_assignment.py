@@ -187,7 +187,8 @@ def generate_hw04(question):
     responses_schema = [
         ResponseSchema(
             name="score",
-            description="積分")
+            description="積分",
+            type="Integer")
     ]
     prompt = ChatPromptTemplate.from_messages(
         [
